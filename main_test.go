@@ -47,8 +47,8 @@ func TestTraverseDir(t *testing.T) {
 
 	traverseDir(hashes, duplicates, &dupeSize, dirFiles, directory)
 
-	assert.Equal(t, 2, len(hashes))
-	assert.Equal(t, 2, len(duplicates))
+	assert.Equal(t, 3, len(hashes))
+	assert.Equal(t, 3, len(duplicates))
 
-	assert.Equal(t, int64(120), dupeSize)
+	assert.Equal(t, int64(132), dupeSize)
 }
